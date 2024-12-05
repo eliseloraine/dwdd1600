@@ -1,0 +1,280 @@
+/* Prevent Problems with Different Browsers Here*/
+* {box-sizing: border-box;}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+    font-size: 16px;
+}  
+
+
+/* Header section here */ 
+header {
+  background-color: #f6f7ec; 
+  padding: 1rem 2vw; 
+  display: flex;
+  align-items: flex-end;
+}
+
+header div {
+  padding-left: 1vw;
+}
+
+header h1 {
+  margin: 0;
+  color: #698986;
+}
+
+header p {
+  margin: 0; 
+  color: #698986;
+  letter-spacing: .5px;
+}
+
+
+/* SMALL screens here*/
+@media only screen and (max-width: 600px) {
+  nav ul {
+      margin: 0;
+      padding: 0 2vw;
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+  }
+  
+  nav a {
+    display: block;
+    padding: .83rem 2rem;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    text-align: center; 
+  }
+
+  nav .active a {
+    background: rgb(105,137,134);
+    background: linear-gradient(0deg, rgba(105,137,134,1) 0%, rgba(61,87,84,1) 100%);
+    color: white;
+  }
+} 
+/*end of the media query*/
+
+
+/* BIG / WIDE screens*/
+@media only screen and (min-width: 601px) {
+   
+  nav {
+      border-top: solid 1px #E0E6E6;
+      
+  }
+  
+  nav ul {
+      margin: 0;
+      padding: 0 2vw;
+      list-style-type: none;
+      display: flex;
+  }
+  
+  nav a {
+      display: block;
+      padding: .83rem 2rem;
+      font-size: 1.1rem;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 700;
+      text-align: center; 
+  }
+  
+  nav .active a {
+    background: rgb(105,137,134);
+    background: linear-gradient(0deg, rgba(105,137,134,1) 0%, rgba(61,87,84,1) 100%);
+    color: white;
+  }
+
+  nav a:hover {
+      color: #000;
+  }
+
+} 
+/*end of the media query*/
+
+
+/* Navigation secton here. */ 
+nav{
+  background-color: #698986;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0 2vw;
+  margin: 0;
+  display: flex;
+}
+
+nav a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+  display: block;
+  padding: .83rem 2rem;
+}
+
+nav li.active a {
+  background-color: #f6f7ec; 
+  color: white;
+}
+
+nav ul li a.active {
+  color: rgb(182, 56, 56);
+}
+
+nav a:hover {
+color: black;
+}
+
+.active {
+  background-color: #a2afa7;
+}
+
+
+/* Main section here */ 
+.heroimage {
+  width: 100%;
+  margin: 0;
+}
+
+.heroimage img {
+  width: 100%;
+  height: auto;
+}
+
+main {
+  padding: 1rem 2vw;
+}
+
+main h1{
+  color: #698986; 
+  font-size: 2.5rem;
+  margin: .5rem 0 .8rem 0;
+}
+
+main h2 {
+  color: #a2afa7;
+  margin-bottom: .2rem;
+}
+
+main p{
+  color: #2f3133; 
+  margin: 0 0 .3rem 0;
+}
+
+main ol {
+  padding: .5rem 3vw;
+  background-color: #f6f7ec; 
+}
+
+main df dt {
+  color: #2f3133; 
+  font-weight: 700; 
+}
+
+main dl dd {
+  color: #2f3133; 
+  font-size: .9rem; 
+  margin-bottom: 10px;
+}
+
+main ul {
+list-style-type: circle;
+background-color: #f6f7ec; 
+padding: .5rem 3vw;
+}
+
+main ul li {
+line-height: 125%;
+margin-bottom: .5rem; 
+font-size: .9rem; 
+}
+
+
+main address {
+  font-style: normal;
+  background-color: #a2afa7; 
+  padding: .5rem; 
+  width: 12.5rem; 
+  border-style: solid; 
+  border-color: black; 
+  border-radius: .9rem; 
+  border-width: 1px;
+}
+
+main a {
+color: #024873; 
+}
+
+main a:hover {
+color: #677358; 
+}
+
+#gallery img:hover {
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* format table content  here */
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th{
+  background-color: #435d5b;
+  color: white;
+  text-align: left;
+  font-size: .8rem;
+  padding: .5rem 2vw;
+
+}
+
+table td{
+  color: #435d5b;
+  padding: .4rem 2vw;
+}
+
+table tr:nth-child(odd){
+  background-color: #f7f7f7;
+}
+
+table tr:hover{
+  background-color: rgba(84,105,31,0.2);
+}
+
+
+/* Footer Section here */ 
+
+footer {
+background-color: #f6f7ec; 
+text-align: center; 
+color: #698986;
+padding: 1rem 0; 
+font-size: .8rem; 
+}
+
+footer a{
+color: #698986;
+}
+
+
+header, nav, main, footer {
+  max-width: 64rem;
+  margin: 0 auto;
+}

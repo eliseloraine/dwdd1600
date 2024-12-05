@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+    
+
+<head>
+    <title>The Art of Meaningful Living</title>
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <meta name="description" content="Learn about the world of interior design.">
+    <meta name="author" content="Elise Dickman">
+    <meta charset="UTF-8">
+    <meta name="description" content="Learn more about our approach through our book, The Art of Meaningful Living"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="delivery.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+
+<!-- This is the start of the body section -->
+<body>
+    <!-- This is the start of the header section -->
+    <header>
+        <img src="images/logo.png" alt="site logo" width="100" height="95">
+        <div>
+            <h1>The Art of Meaningful Living</h1>
+            <p>Learn about the World of Interior Design.</p>
+        </div>
+    </header>
+    
+    <!-- This is the start of the navigation section -->
+    <nav>
+        <ul>
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="emotionaldesign.html"> Turning a House into a Home</a></li>
+            <li><a href="finding_home.html"> Finding Home</a></li>
+            <li><a href="designtips.html"> Design Tips</a></li>
+            <li><a href="table.html"> Principles</a></li>
+            <li><a href="map.html"> Contant Us </a></li>
+            <li class="active"><a href="delivery.html"> Delivery</a></li>
+        </ul>
+    </nav>
+    
+    <!-- This is the start of the main section -->
+    <main>
+        <h1>Request a Delivery</h1>
+        <h2>Learn more about our approach through our book, <em>The Art of Meaningful Living</em></h2>
+        
+        <form method="get" class="myform" action="thanks.html">
+        
+            <fieldset>
+                <legend>Client Information</legend>
+                <label>First Name* <input type="text" name="first_name" required></label>
+                <label>Last Name* <input type="text" name="last_name" required></label>
+                <label>Email Address* <input type="email" name="email" required></label>
+                <label>Home Address* <input type="text" name="address" required></label>
+                <label>Cell Phone <input type="tel" name="phone" placeholder="801-555-1212"></label>
+            </fieldset>
+        
+            <fieldset>
+                <legend>How would you prefer to recieve the book?</legend>
+                <label><input type="radio" name="method" value="PDF vis email">PDF via email</label>
+                <label><input type="radio" name="method" value="Home delivery">Home Delivery</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Are you interested in design for:</legend>
+                <label><input type="checkbox" name="kitchen" value="kitchen">Kitchen</label>
+                <label><input type="checkbox" name="living room" value="living room">Living Room</label>
+                <label><input type="checkbox" name="bedroom" value="bedroom">Bedroom</label>
+                <label><input type="checkbox" name="bathroom" value="bathroom">Bathroom</label>
+                <label><input type="checkbox" name="mudroom" value="mudroom">Mudroom</label>
+                <br><br>
+                <label>Would you be interested in having a consoltation on interior design: </label>
+                <select name="option"> 
+                    <option value="none">Please Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </fieldset>
+        
+            <label>Additional Comments
+                <textarea name="comments"></textarea>
+            </label>
+            <input type="submit" value="Submit Delivery Request">
+
+        </form>
+    </main>
+    
+    <!-- This is the start of the footer section -->
+    <footer>
+        <p>&copy; 2024  |   Elise Nel   &bull; <a href="mailto:email@gmail.com"> Email Us</a></p>
+    </footer>
+
+</body>
+</html>
